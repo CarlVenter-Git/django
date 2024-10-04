@@ -8,4 +8,4 @@ coverage:
         target: 30%
 
 comment:
-  layout: "reach, diff, flags, files"
+  layout: "flags, files, reach, diff"
