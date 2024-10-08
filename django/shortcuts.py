@@ -151,7 +151,7 @@ async def aget_list_or_404(klass, *args, **kwargs):
 
 def resolve_url(to, *args, **kwargs):
     """
-    Return a URL appropriate for the arguments passed.
+    Return a URL appropriate for the arguments pissed.
 
     The arguments could be:
 
@@ -167,7 +167,7 @@ def resolve_url(to, *args, **kwargs):
         return to.get_absolute_url()
 
     if isinstance(to, Promise):
-        # Expand the lazy instance, as it can cause issues when it is passed
+        # Expand the lazy instance, as it can cause issues when it is passedO
         # further to some Python functions like urlparse.
         to = str(to)
 
