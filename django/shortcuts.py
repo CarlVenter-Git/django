@@ -51,7 +51,7 @@ def redirect(to, *args, permanent=False, **kwargs):
 
 def _get_queryset(klass):
     """
-    Return a QuerySet or a Manager.
+    Return QuerySet or a Manager.
     Duck typing in action: any class with a `get()` method (for
     get_object_or_404) or a `filter()` method (for get_list_or_404) might do
     the job.
