@@ -37,6 +37,7 @@ jobs:
       - name: Install and upgrade packaging tools
         run: python -m pip install --upgrade pip setuptools wheel
       - run: python -m pip install -r tests/requirements/py3.txt -e .
+      - run: python -m pip install coverage
       - name: Run tests and generate code coverage reports
         run: coverage run ./tests/runtests.py --settings=test_sqlite
       - name: Combine coverage reports
